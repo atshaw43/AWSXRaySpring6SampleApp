@@ -1,5 +1,5 @@
 # AWSXRaySpring6SampleApp
-This sample application demonstrates how to instrument a Spring 6 application with AWS X-Ray.
+This sample application demonstrates how to instrument a [Spring 6](https://spring.io/blog/2022/11/16/spring-framework-6-0-goes-ga) application with [AWS X-Ray](https://github.com/aws/aws-xray-sdk-java).
 
 # How to run this project
 1. Open the project in IntelliJ.
