@@ -11,3 +11,9 @@ Spring 6 uses the Jakarta namespace instead of Javax for many of its new classes
 1. You should see sgments sent to the daemon.
 {"format": "json", "version": 1}
 {"name":"MyTestSegment","id":"2f77a0ec21c7c77d","start_time":1.676588794852E9,"trace_id":"1-63eeb6fa-2a8b727c314baa634c2dd671","end_time":1.676588794905E9,"http":{"request":{"method":"GET","client_ip":"127.0.0.1","url":"http://127.0.0.1:8080/hello","runtime_version":"17.0.4.1"}}
+
+# How it works
+
+A filter is setup so that AWS X-Ray knows when a request comes in. This is done in the WebConfig class. Here we are using the dynamic naming strategy and using "MyTestSegment" as the fallback name. This is what the node will be called in the backend.
+
+Next we setup the HelloApplication class. We startup Spring by calling "SpringApplication". A method called "hello" handles the "/hello" page we hit earlier. All this function does is send a string back to the web client. But becase the filter is setup, it will also create a segment and send it to the Daemon.
