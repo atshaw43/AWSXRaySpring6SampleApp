@@ -1,4 +1,4 @@
-# AWSXRaySpring6SampleApp
+# AWS X-Ray Spring 6 Sample App
 This sample application demonstrates how to instrument a [Spring 6](https://spring.io/blog/2022/11/16/spring-framework-6-0-goes-ga) application with [AWS X-Ray](https://github.com/aws/aws-xray-sdk-java).
 
 Spring 6 uses the Jakarta namespace instead of Javax for many of its new classes. X-Ray made a parallel set of classes for Jakarta so you can continue using your favorite EE.
