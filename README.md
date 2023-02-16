@@ -1,6 +1,8 @@
 # AWSXRaySpring6SampleApp
 This sample application demonstrates how to instrument a [Spring 6](https://spring.io/blog/2022/11/16/spring-framework-6-0-goes-ga) application with [AWS X-Ray](https://github.com/aws/aws-xray-sdk-java).
 
+Spring 6 usese the Jakarta namespace instead of Javax for many of its new classes. X-Ray made a parallel set of classes for Jakarta so you can continue using your favorite EE.
+
 # How to run this project
 1. Open the project in IntelliJ.
 1. Click Run at the top -> "Run HelloApplication"
